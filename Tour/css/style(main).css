@@ -24,7 +24,7 @@ header
     width: 100%;
     height: 100px;
     background-color: #fefefe;
-    background-image: url(../Tour/img/header_bg.png);
+    background-image: url(../img/header_bg.png);
     background-repeat: repeat-x;
     background-position: bottom;
 }
@@ -81,7 +81,7 @@ header .gnb > a:first-child
     width: 1000px;
     height: 620px;
     margin: 0 auto;
-    background: url(/Tour/img/main_bg.png);
+    background: url(../img/main_bg.png);
 }
 #content > .mama > #article > div:nth-child(1)
 {
@@ -90,7 +90,7 @@ header .gnb > a:first-child
     height: 200px;
     left: 0;
     top: 0;
-    background: url(/Tour/img/main_box1_bg.png);
+    background: url(../img/main_box1_bg.png);
 }
 .mama > #article > .box1 >img:nth-child(1)
 {
@@ -111,7 +111,7 @@ header .gnb > a:first-child
     height: 200px;
     left: 200px;
     top: 0;
-    background: url(/Tour/img/main_box2_bg.png);
+    background: url(../img/main_box2_bg.png);
 }
 #content > .mama > #article > div:nth-child(3)
 {
@@ -120,7 +120,7 @@ header .gnb > a:first-child
     left: 400px;
     top: 0;
     position: absolute;
-    background: url(/Tour/img/main_box3_bg.png);
+    background: url(../img/main_box3_bg.png);
     text-align: center;
     padding-top: 30px;
     box-sizing: border-box;
@@ -139,7 +139,7 @@ header .gnb > a:first-child
     left: 600px;
     top: 0;
     position: absolute;
-    background: url(/Tour/img/main_box4_bg.png);
+    background: url(../img/main_box4_bg.png);
     text-align: left;
     padding-top: 30px;
     box-sizing: border-box;
@@ -148,7 +148,7 @@ header .gnb > a:first-child
 {
     width: 200px;
     height: 200px;
-    background: url(/Tour/img/main_box5_bg.jpg) no-repeat;
+    background: url(../img/main_box5_bg.jpg) no-repeat;
     position: absolute;
     top: 200px;
 }
@@ -162,7 +162,7 @@ header .gnb > a:first-child
 {
     width: 200px;
     height: 200px;
-    background: url(/Tour/img/main_box6_bg.jpg);
+    background: url(../img/main_box6_bg.jpg);
     position: absolute;
     top: 200px;
     left: 200px;
@@ -175,7 +175,7 @@ header .gnb > a:first-child
 {
     width: 200px;
     height: 200px;
-    background: url(/Tour/img/main_box7_bg.png);
+    background: url(../img/main_box7_bg.png);
     position: absolute;
     top: 400px;
     left: 200px;
