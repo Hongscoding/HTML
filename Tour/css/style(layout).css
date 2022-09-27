@@ -1,5 +1,3 @@
-/* 태그 초기화 */
-
 /* layout */
 *{
     margin: 0;
@@ -70,7 +68,6 @@ main > section > div{
 main > section > div:nth-child(5) {
     clear: left;
 }
-main > section > div:nth-child(6) {}
 main > section > div:nth-child(7) {
     clear: left;
     margin-left: 200px;
