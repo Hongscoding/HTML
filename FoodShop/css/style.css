@@ -137,7 +137,7 @@ main > .go div:nth-child(3){float: right; width: 322px; height: 220px;}
 main > .go div:nth-child(4){width: 322px; height: 220px; margin-left: 11px; margin-top: 10px;}
 main > .go div:nth-child(5){float: right; width: 322px; height: 220px; margin-top: 10px;}
 main > .oneday{
-    background-image: url("./img/oneday_bg.png");
+    background-image: url("../img/oneday_bg.png");
     background-size: cover;
     background-position: 50% center;
 }
@@ -204,11 +204,10 @@ main .all{
     color: #626262;
     font-size: 15px;
     font-weight: bold;
-    
 }
 main .all:hover{color: #999;}
 main > .premium{
-    background-image: url("./img/premium_bg.png");
+    background-image: url("../img/premium_bg.png");
     background-size: cover;
     background-position: 50% center;
 }
