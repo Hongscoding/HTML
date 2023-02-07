@@ -809,6 +809,9 @@ header > .logo a{
     padding: 10px;
     box-sizing: border-box;
 }
+#cs > .qna > .write > article > div{
+    margin: auto;
+}
 
  /* footer */
  footer {
