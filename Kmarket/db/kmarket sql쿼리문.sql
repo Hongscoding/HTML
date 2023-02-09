@@ -370,4 +370,59 @@ INSERT INTO `km_product_cate2` (`cate1`, `cate2`, `c2Name`) VALUES (18, 13, 'e�
 INSERT INTO `km_product_cate2` (`cate1`, `cate2`, `c2Name`) VALUES (18, 14, '상품권');
 
 /* prodNo 컬럼 1,000,000부터 번호 부여*/
+<<<<<<< HEAD
 alter table `km_product` auto_increment = 1000000;
+=======
+alter table `km_product` auto_increment = 1000000;
+
+/* cs 문의하기 테이블 */
+CREATE TABLE IF NOT EXISTS `Kmarket`.`km_cs_qna`(
+	`uid` VARCHAR(20) NOT NULL,
+	`qnaCate1` TINYINT(2) NOT NULL,
+	`qnaCate2` INT(2) NOT NULL,
+	`qnaTitle` VARCHAR(50) NOT NULL,
+	`qnaContent` VARCHAR(255) NOT NULL,
+	`regip` VARCHAR(100) NOT NULL,
+	`wdate` DATETIME NOT NULL,
+	  PRIMARY KEY (`uid`))
+ENGINE = INNODB;
+
+-- -----------------------------------------------------
+-- Table `Kmarket`.`km_cs_cate1`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Kmarket`.`km_cs_cate1` (
+  `qnaCate1` TINYINT(2) NOT NULL,
+  `qc1Name` VARCHAR(20) NOT NULL,
+  PRIMARY KEY (`qnaCate1`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Kmarket`.`km_cs_cate2`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Kmarket`.`km_cs_cate2` (
+  `qnaCate1` TINYINT(2) NOT NULL,
+  `qnaCate2` INT(2) NOT NULL,
+  `qc2Name` VARCHAR(20) NOT NULL,
+  INDEX `fk_km_cs_cate2_km_cs_cate1_idx` (`qnaCate1` ASC) VISIBLE,
+  CONSTRAINT `fk_km_cs_cate2_km_cs_cate11`
+    FOREIGN KEY (`qnaCate1`)
+    REFERENCES `Kmarket`.`km_cs_cate1` (`qnaCate1`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+/* cs_qna cate1 insert */
+INSERT INTO `km_cs_cate1` VALUES (1, '회원');
+INSERT INTO `km_cs_cate1` VALUES (2, '쿠폰/이벤트');
+
+/* cs_qna cate2 insert */
+INSERT INTO `km_cs_cate2` VALUES (1, 1, '가입');
+INSERT INTO `km_cs_cate2` VALUES (1, 2, '탈퇴');
+INSERT INTO `km_cs_cate2` VALUES (1, 3, '회원정보');
+INSERT INTO `km_cs_cate2` VALUES (1, 4, '로그인');
+INSERT INTO `km_cs_cate2` VALUES (1, 5, '아이디/비밀번호 찾기');
+
+
+
+>>>>>>> 5dcc14f8526c1018b01635d3c7730f17d5459d8c
