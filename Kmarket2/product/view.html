@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="/Kmarket2/css/style.css"/>
 </head>
 <style>
     
@@ -36,7 +37,7 @@
                     <form action="#">
                         <input type="text" name="keyword">
                         <button>
-                            <i class="fa fa-serch" aria-hidden="true"></i>
+                            <i class="fa fa-search fa-lg" aria-hidden="true"></i>
                         </button>
                     </form>
                 </div>
@@ -60,8 +61,8 @@
                 </div>
             </div>
         </header>
-        <main id="product">
-            <!-- 카테고리 aside 시작 -->
+        <main id="termsPolicy">
+            <!-- 공통 aside -->
             <aside>
                 <ul class="category">
                     <li>
@@ -72,6 +73,7 @@
                         <a href="#">
                             <i class="fas fa-tshirt" aria-hidden="true"></i>
                             패션·의류·뷰티
+                            <i class="fas fa-angle-right" aria-hidden="true"></i>
                         </a>
                         <ol>
                             <li>
@@ -92,6 +94,7 @@
                         <a href="#">
                             <i class="fas fa-laptop" aria-hidden="true"></i>
                             가전·디지털
+                            <i class="fas fa-angle-right" aria-hidden="true"></i>
                         </a>
                         <ol>
                             <li>
@@ -112,6 +115,7 @@
                         <a href="#">
                             <i class="fas fa-utensils" aria-hidden="true"></i>
                             식품·생필품
+                            <i class="fas fa-angle-right" aria-hidden="true"></i>
                         </a>
                         <ol>
                             <li>
@@ -132,6 +136,7 @@
                         <a href="#">
                             <i class="fas fa-home" aria-hidden="true"></i>
                             홈·문구·취미
+                            <i class="fas fa-angle-right" aria-hidden="true"></i>
                         </a>
                         <ol>
                             <li>
@@ -201,7 +206,7 @@
                             <span class="origin">원산지-상세설명 참조</span>
                         </nav>
                         <img src="../img/vip_plcc_banner.png" alt="광고" class="banner">
-                        <div class="discount">
+                        <div class="count">
                             <button class="decrease">-</button>
                             <input type="text" name="num" value="1" readonly>
                             <button class="increase">+</button>
@@ -211,8 +216,8 @@
                             <em>총 상품 금액</em>
                         </div>
                         <div class="button">
-                            <input type="buttin" class="cart" value="장바구니">
-                            <input type="buttin" class="order" value="구매하기">
+                            <input type="button" class="cart" value="장바구니">
+                            <input type="button" class="order" value="구매하기">
                         </div>
                     </div>
                 </article>
