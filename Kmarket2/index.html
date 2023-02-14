@@ -6,8 +6,34 @@
     <script src="https://kit.fontawesome.com/e8f010a863.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"/>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="/Kmarket2/css/style.css"/>
 </head>
+<script>
+    $(document).ready(function(){
+          $(".slider > ul").bxSlider({
+            easing: "linear",
+          });
+        });
+        $(function(){
+            let best = $("aside > .best");
+            
+            $(window).scroll(function(){
+
+              let t = $(this).scrollTop();
+
+              if(t > 620){
+                best.css({
+                  position: "fixed",
+                  top: "0",
+                });
+              }else{
+                best.css({position: "static"});
+              }
+            });
+        });
+</script>
 <body>
     <div id="wrapper">
         <header>
@@ -148,102 +174,102 @@
                         </ol>
                     </li>
                 </ul>
+                <!-- 베스트 상품 -->
+                <article class="best">
+                    <h1><i class="fas fa-crown" aria-hidden="true"></i>베스트상품</h1>
+                    <ol>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>1</i>
+                                    <img src="https://via.placeholder.com/230" alt="상품사진">
+                                </div>
+                                <h2>상품명</h2>
+                                <div class="org-price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="dis-price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>2</i>
+                                    <img src="https://via.placeholder.com/50" alt="상품사진">
+                                </div>
+                                <article>
+                                    <h2>상품명</h2>
+                                    <div class="org-price">
+                                        <del>30,000</del>
+                                        <span>10%</span>
+                                    </div>
+                                    <div class="dis-price">
+                                        <ins>27,000</ins>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>3</i>
+                                    <img src="https://via.placeholder.com/50" alt="상품사진">
+                                </div>
+                                <article>
+                                    <h2>상품명</h2>
+                                    <div class="org-price">
+                                        <del>30,000</del>
+                                        <span>10%</span>
+                                    </div>
+                                    <div class="dis-price">
+                                        <ins>27,000</ins>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>4</i>
+                                    <img src="https://via.placeholder.com/50" alt="상품사진">
+                                </div>
+                                <article>
+                                    <h2>상품명</h2>
+                                    <div class="org-price">
+                                        <del>30,000</del>
+                                        <span>10%</span>
+                                    </div>
+                                    <div class="dis-price">
+                                        <ins>27,000</ins>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>5</i>
+                                    <img src="https://via.placeholder.com/50" alt="상품사진">
+                                </div>
+                                <article>
+                                    <h2>상품명</h2>
+                                    <div class="org-price">
+                                        <del>30,000</del>
+                                        <span>10%</span>
+                                    </div>
+                                    <div class="dis-price">
+                                        <ins>27,000</ins>
+                                    </div>
+                                </article>
+                            </a>
+                        </li>
+                    </ol>
+                </article>
+                <!-- 베스트 상품 끝 -->
             </aside>
-            <!-- 베스트 상품 -->
-            <article class="best" style="position: static; top: 0px;">
-                <h1><i class="fas fa-crown" aria-hidden="true"></i>베스트상품</h1>
-                <ol>
-                    <li>
-                        <a href="#">
-                            <div class="thumb">
-                                <i>1</i>
-                                <img src="https://via.placeholder.com/230" alt="상품사진">
-                            </div>
-                            <h2>상품명</h2>
-                            <div class="org-price">
-                                <del>30,000</del>
-                                <span>10%</span>
-                            </div>
-                            <div class="dis-price">
-                                <ins>27,000</ins>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="thumb">
-                                <i>2</i>
-                                <img src="https://via.placeholder.com/50" alt="상품사진">
-                            </div>
-                            <article>
-                                <h2>상품명</h2>
-                                <div class="org-price">
-                                    <del>30,000</del>
-                                    <span>10%</span>
-                                </div>
-                                <div class="dis-price">
-                                    <ins>27,000</ins>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="thumb">
-                                <i>3</i>
-                                <img src="https://via.placeholder.com/50" alt="상품사진">
-                            </div>
-                            <article>
-                                <h2>상품명</h2>
-                                <div class="org-price">
-                                    <del>30,000</del>
-                                    <span>10%</span>
-                                </div>
-                                <div class="dis-price">
-                                    <ins>27,000</ins>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="thumb">
-                                <i>4</i>
-                                <img src="https://via.placeholder.com/50" alt="상품사진">
-                            </div>
-                            <article>
-                                <h2>상품명</h2>
-                                <div class="org-price">
-                                    <del>30,000</del>
-                                    <span>10%</span>
-                                </div>
-                                <div class="dis-price">
-                                    <ins>27,000</ins>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="thumb">
-                                <i>5</i>
-                                <img src="https://via.placeholder.com/50" alt="상품사진">
-                            </div>
-                            <article>
-                                <h2>상품명</h2>
-                                <div class="org-price">
-                                    <del>30,000</del>
-                                    <span>10%</span>
-                                </div>
-                                <div class="dis-price">
-                                    <ins>27,000</ins>
-                                </div>
-                            </article>
-                        </a>
-                    </li>
-                </ol>
-            </article>
-            <!-- 베스트 상품 끝 -->
             <section>
                 <!-- 슬라이더 -->
                 <section class="slider">
@@ -277,7 +303,7 @@
                 </section>
                 <!-- 히트 상품 -->
                 <section class="hit">
-                    <h3>히트상품</h3>
+                    <h3><span>히트상품</span></h3>
                     <article>
                         <a href="#">
                             <div class="thumb">
@@ -366,7 +392,7 @@
                 </section>
                 <!-- 추천 상품 -->
                 <section class="recommend">
-                    <h3>추천상품</h3>
+                    <h3><span>추천상품</span></h3>
                     <article>
                         <a href="#">
                             <div class="thumb">
@@ -455,7 +481,7 @@
                 </section>
                 <!-- 최신 상품 -->
                 <section class="new">
-                    <h3>최신상품</h3>
+                    <h3><span>최신상품</span></h3>
                     <article>
                         <a href="#">
                             <div class="thumb">
@@ -527,7 +553,7 @@
                 </section>
                 <!-- 할인 상품 -->
                 <section class="discount">
-                    <h3>할인상품</h3>
+                    <h3><span>할인상품</span></h3>
                     <article>
                         <a href="#">
                             <div class="thumb">
