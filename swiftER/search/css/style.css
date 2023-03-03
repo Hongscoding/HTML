@@ -1,0 +1,86 @@
+#search > .er{
+    width: 900px;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#search > .er > div{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+#search > .er > div > h2.er-search{
+    font-size: 33px;
+    font-weight: bold;
+    margin: 30px;
+}
+#search > .er > div > form{
+    width: 100%;
+    height: auto;
+}
+#search > .er > div > form > fieldset {
+    border: none;   
+    margin: 20px;
+}
+#search > .er > div > form > fieldset > legend{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #8c8c88;
+}
+#search > .er > div > form > fieldset.location{}
+#search > .er > div > form > fieldset.location > legend{}
+#search > .er > div > form > fieldset.location > select{
+    width: 100px;
+    height: 27px;
+    border: 1px solid #94b7d0;
+}
+#search > .er > div > form > fieldset.location > select{
+    margin-right: 5px;
+}
+#search > .er > div > form > fieldset.location > select #city{}
+#search > .er > div > form > fieldset.location > select #town{}
+#search > .er > div > form > fieldset.med-department{}
+#search > .er > div > form > fieldset.med-department > legend{}
+#search > .er > div > form > fieldset.med-department > input{
+    margin-right: 5px;
+}
+#search > .er > div > form > fieldset.med-department > label{
+    color: #454545;
+    font-weight: bold;
+    margin-right: 40px;
+    font-size: 15px;
+}
+#search > .er > div > form > fieldset.med-equipment{}
+#search > .er > div > form > fieldset.med-equipment > legend{}
+#search > .er > div > form > fieldset.med-equipment > input{
+    margin-right: 5px;
+}
+#search > .er > div > form > fieldset.med-equipment > label{
+    color: #454545;
+    font-weight: bold;
+    margin-right: 40px;
+    font-size: 15px;
+}
+#search > .er > div > form > div{
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+}
+#search > .er > div > form > div > input{
+    width: 90px;
+    height: 35px;
+    border: none;
+    text-align: center;
+    color: #fff;
+    margin-top: 7.5px;
+}
+#search > .er > div > form > div > input.resetBtn{
+    background: linear-gradient(90deg, rgba(44,233,123,1) 0%, rgba(44,233,123,1) 13%, rgba(1,177,255,1) 100%);
+}
+#search > .er > div > form > div > input.subBtn{
+    background-color: #1b9cff;
+    float: right;
+}
+#search > .er > div.info{}
+#search > .er > div.info > p{}
