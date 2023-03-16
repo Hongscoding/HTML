@@ -1,19 +1,47 @@
 <style>
-    div.widow{}
-    div.widow > strong{}
-    div.widow > strong > a{}
-    div.widow > strong > a:hover{border: 1px solid;}
-    div.widow > div.widinfo{}
-    div.widow > div.widinfo > div.term{}
-    div.widow > div.widinfo > span.txtbar{}
-    div.widow > div.widinfo > div.val{}
+    div.widow{padding: 5px;}
+    div.widow > strong{
+        height: 100%;
+        font-size: 16px;
+        letter-spacing: -1px;
+        color: #01b1ff;
+        margin-bottom: 7px;
+        border-style: none;
+    }
+    div.widow > strong > a{
+        text-decoration: none;
+    }
+    div.widow > strong > a:hover{border-bottom: 1px solid #2ce97b; color: #2ce97b;}
+    div.widow > div.widinfo{
+        width: 100%;
+        height: auto;
+        margin: 7px 0 7px;
+        
+    }
+    div.widow > div.widinfo > div.term{
+        float: left;
+        font-size: 12px;
+        color: #868686;
+        width: 47px;
+    }
+    div.widow > div.widinfo > span.txtbar{
+        float: left;
+        font-size: 12px;
+        color: #868686;
+        width: 20px;
+    }
+    div.widow > div.widinfo > div.val{
+        float: left;
+        font-size: 12px;
+        color: #404040;
+        overflow: hidden;
+    }
 </style>
 <div class="widow">
     <strong><a href="#">${item.dutyName}</a></strong>
     <div class="widinfo">
-        <div class="term">주소</div>
+        <div class="term">주      소</div>
         <span class="txtbar"> : </span>
         <div class="val">${item.dutyAddr}</div>
     </div>
-
 </div>
