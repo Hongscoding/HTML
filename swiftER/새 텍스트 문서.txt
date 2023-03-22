@@ -1,0 +1,59 @@
+function filterByCT(items) {
+  return items.filter(item => item.hvctayn === "Y");
+}
+
+function filterByMRI(items) {
+  return items.filter(item => item.hvmriayn === "Y");
+}
+
+function filterByCamera(items) {
+  return items.filter(item => item.hvangioayn === "Y");
+}
+
+function filterByRespirator(items) {
+  return items.filter(item => item.hvventiayn === "Y");
+}
+
+function filterByIncubator(items) {
+  return items.filter(item => item.hv11 === 0);
+}
+
+function filterByCommon(items) {
+  return items.filter(item => item.mkioskty1 === "Y");
+}
+
+function filterByMedicien(items) {
+  return items.filter(item => item.mkioskty2 === "Y");
+}
+
+function filterBySurgery(items) {
+  return items.filter(item => item.mkioskty3 === "Y");
+}
+
+function filterByNeurosurgery(items) {
+  return items.filter(item => item.mkioskty8 === "Y");
+}
+
+// 조건에 따라 필터링된 배열을 계속해서 연결하는 함수
+function applyFilters(items, filters) {
+  return filters.reduce((acc, filter) => filter(acc), items);
+}
+
+// 필터링 조건 설정
+const filters = [];
+if (CT) filters.push(filterByCT);
+if (MRI) filters.push(filterByMRI);
+if (camera) filters.push(filterByCamera);
+if (respirator) filters.push(filterByRespirator);
+if (incubator) filters.push(filterByIncubator);
+if (common) filters.push(filterByCommon);
+if (medicien) filters.push(filterByMedicien);
+if (surgery) filters.push(filterBySurgery);
+if (neurosurgery) filters.push(filterByNeurosurgery);
+
+// 필터링 조건 적용
+const combinedFiltered = applyFilters(combined, filters);
+
+console.log('combinedFiltered', combinedFiltered);
+
+조건에 따른 배열 필터
