@@ -1,0 +1,9 @@
+er/er
+https://www.hira.or.kr/ra/hosp/getHealthMap.do?tabgbn=03&WT.ac#a
+위 참고, 헤더푸터는 살리고 main 영역을 전체 map으로 한 다음 왼쪽에 aside 만들고, 선택하면 
+클래스 on 추가해서 띄우고 그 안에 검색 조건이랑 폼 영역 설정해서 하기.
+
+er/Detail
+https://www.nhis.or.kr/nhis/healthin/retrieveExmdAdminSearch.do#empty
+상세 누르면 뜨는 팝업 css 참고, 헤더 푸터 살리고 main영역에 shadow 느낌(관리자 페이지 참고)
+주고 그 안에 데이터 뿌리기, 리뷰 등록은 똑같이 팝업창 살리고, 리뷰 출력은 더 고민해보기로.
