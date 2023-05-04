@@ -2,6 +2,8 @@ er/er
 https://www.hira.or.kr/ra/hosp/getHealthMap.do?tabgbn=03&WT.ac#a
 위 참고, 헤더푸터는 살리고 main 영역을 전체 map으로 한 다음 왼쪽에 aside 만들고, 선택하면 
 클래스 on 추가해서 띄우고 그 안에 검색 조건이랑 폼 영역 설정해서 하기.
+1차 수정 완료
+헤더 푸터 날리고 링크 이동을 li로 넣고 디자인 수정하기
 
 er/Detail
 https://www.nhis.or.kr/nhis/healthin/retrieveExmdAdminSearch.do#empty
